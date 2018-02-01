@@ -1,0 +1,7 @@
+create a div which contains 2 inputs and one button.
+each of these should be a separate components, all rendered by a parent component called App.
+you should collect the data from the inputs and make it available in the parent component (using a function would work for this).
+input 1 should collect the data  for the firstname
+and input 2 should collect the data for the lastname.
+to make thigs easier you may use refs in the input fileds.
+when the button (also a separate component) is clicked then you should alert the data collectd by the two inputs.
