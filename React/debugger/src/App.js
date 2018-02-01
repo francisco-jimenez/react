@@ -8,12 +8,13 @@ class App extends Component {
     super()
     this.state = {
         todos:[
-              { todo:"go shopping"  },
-              { todo:"eat out"  },
-              { todo:"do the laundry" },
-              { todo:"pay the bills"  }
+              "go shopping",
+              "eat out" ,
+              "do the laundry" ,
+              "pay the bills"
             ]
       }
+    this.remove = this.remove.bind(this)
   }
 
   remove(index){
@@ -25,7 +26,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-          <TodoList 
+          <TodoList
               remove = { this.remove}
               todos  = { this.state.todos}/>
       </div>

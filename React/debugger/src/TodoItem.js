@@ -5,7 +5,7 @@ export default class TodoItem extends React.Component{
 		this.props.remove(this.props.index)
 	}
 	render(){
-		let style ={ 
+		let style ={
 			display:'grid',
 			border:'1px solid black',
 			padding:'1rem',
@@ -16,10 +16,10 @@ export default class TodoItem extends React.Component{
 			justifySelf:'end'
 		}
 		return(
-			<div 
-				style={style}>{this.props.todo}
-				<i 
-					onClick={this.handleClick}
+			<div
+				style={style}>{this.props.todo}>
+				<i
+					onClick={this.handleClick.bind(this)}
 					style={icon}
 					className="fa fa-trash"></i>
 			</div>
